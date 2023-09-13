@@ -1,5 +1,5 @@
 .container {
-  background-color: black;
+  background-color:$primary-color;
   position: fixed;
   width: 100%;
   top: 0;
@@ -27,7 +27,7 @@ align-items: center;
   align-items: center;
   justify-content: center;
   width: 100vw;
-  color: rgb(213, 43, 143);
+  color:$letter-color;
 }
 }
 
@@ -45,12 +45,14 @@ align-items: center;
     justify-content: space-around;
     gap: 10px;
     
-
    }
+    &__icon {
+      color: $secondary-color;
+    }
 
 }
 .header-section2 ul li a {
   text-decoration: none;
-  color: white;
+  color: $secondary-color;
 }
 
