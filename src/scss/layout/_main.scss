@@ -1,19 +1,19 @@
 .main-container {
     width: 100vw;
     height: 100vh;
-    background-color: aqua;
+    background-color: $primary-color;
     margin-top: 48px;
     margin-left: auto;
     margin-right: auto;
     padding: 15px 20px;
     max-width: 1100px;
 }
-.sobremi {
+.aboutme {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 100vh;
-    
+    background-color: $primary-color;
    
     &__art1{
         margin-top: 20px;
@@ -25,10 +25,18 @@
             text-align: center;
             color:$letter-color;
             font-family: $font-title;
+            font-size: 24px;
+        }
+        &--title2 {
+            margin-top: 15px;
+            font-size: 20px;
+            font-family: $font-title;
+            color:$secondary-color;
         }
         &--parr {
             text-align: center;
             font-family: $font-main;
+            color:$secondary-color;
         }
         &--btn {
             margin-top: 20px;
