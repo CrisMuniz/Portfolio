@@ -29,6 +29,7 @@ align-items: center;
   justify-content: center;
   width: 100vw;
   color:$letter-color;
+  font-size: 16px;
 }
 }
 
@@ -44,16 +45,31 @@ align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 10px;
-    
+    width: 100%;
+    font-size: 14px;
+
    }
     &__icon {
       color: $secondary-color;
+      font-size: 14px;
     }
 
 }
 .header-section2 ul li a {
   text-decoration: none;
   color: $secondary-color;
+
+}
+@media screen and (min-width: 768px) {
+  .header-section1 {
+    &__logo {
+      font-size: 24px;
+    }
+  }
+  .header-section2 {
+    &__ul{
+      font-size: 16px;
+    }
+  }
 }
 
