@@ -16,7 +16,7 @@
 
 .aboutme {
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     justify-content: space-between;
     background-color: $primary-color;
 
@@ -55,14 +55,20 @@
            font-size: 14px;
 
         }
-    }
+        &--btn:hover {
+            box-shadow: inset 0 0 20px rgba(46, 3, 18, 0.5), 0 0 20px rgba(44, 17, 37, 0.4);
+            outline-color: rgba(49, 138, 172, 0);
+            outline-offset: 80px;
+            text-shadow: 1px 1px 6px #fff;
+        }
+        }
     &__art2 {
 
         padding-top: 20px;
         width: 100vw;
         display: flex;
         justify-content: center;
-    
+
         &--img {
            width: 170px;
            height: 200px;
@@ -71,7 +77,8 @@
 
         }
     }
-}
+    }
+
 @media screen and (min-width: 768px) {
     .aboutme {
         &__art1 {
@@ -94,5 +101,26 @@
                 align-items: center;
             }
         }
+    }
+}
+
+// Sección Portfolio
+.portfolio {
+    &__title {
+        color: $secondary-color;
+    }
+}
+.galery {
+
+}
+.proyect1 {
+    &__img {
+
+    }
+    &__title {
+        color: $secondary-color;
+    }
+    &__parr {
+        color: $secondary-color;
     }
 }
