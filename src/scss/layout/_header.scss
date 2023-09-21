@@ -1,5 +1,5 @@
 .container {
-  background-color:$primary-color;
+  background-color: #1c1a27;
   position: fixed;
   width: 100%;
   top: 0;
@@ -10,27 +10,30 @@
 }
 .header {
   max-width: 1100px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    border: 2px red solid;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
 }
 .header-section1 {
-width: 50px;
-display: flex;
-align-items: center;
-
-&__logo {
+  width: 50px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100vw;
-  color:$letter-color;
-  font-size: 16px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    color: $letter-color;
+    font-size: 16px;
+  }
 }
+.cm {
+  color: $letter-color;
+  text-decoration: none;
 }
 
 .header-section2 {
@@ -39,26 +42,23 @@ align-items: center;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  
-   &__ul{
+
+  &__ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
     font-size: 14px;
-
-   }
-    &__icon {
-      color: $secondary-color;
-      font-size: 14px;
-    }
-
+  }
+  &__icon {
+    color: $secondary-color;
+    font-size: 14px;
+  }
 }
 .header-section2 ul li a {
   text-decoration: none;
   color: $secondary-color;
-
 }
 @media screen and (min-width: 768px) {
   .header-section1 {
@@ -67,9 +67,8 @@ align-items: center;
     }
   }
   .header-section2 {
-    &__ul{
+    &__ul {
       font-size: 16px;
     }
   }
 }
-

@@ -1,292 +1,281 @@
 .page {
-    background-color: $primary-color;
+  background-image: $primary-color;
 }
 //Sección Sobre mí
 .main-container {
-    width: 100vw;
-    //height: 100vh;
-    background-color: $primary-color;
-    margin-top: 48px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px 20px;
-    max-width: 1100px;
-    border: 2px red solid;
+  width: 100vw;
+  background-image: $primary-color;
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 20px;
+  max-width: 1100px;
 }
 
 .aboutme {
+  display: flex;
+  flex-direction: column-reverse;
+
+  &__art1 {
+    padding-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    &--title {
+      margin-bottom: 20px;
+      text-align: center;
+      color: $letter-color;
+      font-family: $font-title;
+      font-size: 24px;
+    }
+    &--title2 {
+      margin-top: 15px;
+      font-size: 20px;
+      font-family: $font-title;
+      color: $secondary-color;
+    }
+    &--parr {
+      text-align: center;
+      margin-top: 10px;
+      font-family: $font-main;
+      color: $secondary-color;
+    }
+    &--btn {
+      margin-top: 20px;
+      background-color: $letter-color;
+      color: $secondary-color;
+      margin: 20px auto;
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-size: 14px;
+    }
+    &--btn:hover {
+      box-shadow: inset 0 0 20px rgba(46, 3, 18, 0.5),
+        0 0 20px rgba(44, 17, 37, 0.4);
+      outline-color: rgba(49, 138, 172, 0);
+      outline-offset: 80px;
+      text-shadow: 1px 1px 6px #fff;
+    }
+  }
+  &__art2 {
+    padding-top: 40px;
     display: flex;
-    flex-direction:column-reverse;
-    background-color: $primary-color;
+    justify-content: center;
 
-    &__art1{
-
-        padding-top: 20px;
-        font-size: 14px;
-        text-align: center;
-        &--title {
-            margin-bottom: 20px;
-            text-align: center;
-            color:$letter-color;
-            font-family: $font-title;
-            font-size: 24px;
-        }
-        &--title2 {
-            margin-top: 15px;
-            font-size: 20px;
-            font-family: $font-title;
-            color:$secondary-color;
-        }
-        &--parr {
-            text-align: center;
-            margin-top: 10px;
-            font-family: $font-main;
-            color:$secondary-color;
-        }
-        &--btn {
-            margin-top: 20px;
-           background-color: $letter-color;
-           color: $secondary-color;
-           margin: 20px auto;
-           padding: 10px 22px;
-           border-radius: 50px;
-           font-size: 14px;
-
-        }
-        &--btn:hover {
-            box-shadow: inset 0 0 20px rgba(46, 3, 18, 0.5), 0 0 20px rgba(44, 17, 37, 0.4);
-            outline-color: rgba(49, 138, 172, 0);
-            outline-offset: 80px;
-            text-shadow: 1px 1px 6px #fff;
-        }
-        }
-    &__art2 {
-
-        padding-top: 40px;
-        display: flex;
-        justify-content: center;
-
-        &--img {
-           width: 170px;
-           height: 200px;
-           border-radius: 30px;
-           border:2px $letter-color solid ;
-
-        }
+    &--img {
+      width: 170px;
+      height: 200px;
+      border-radius: 30px;
+      border: 2px $letter-color solid;
     }
-    }
+  }
+}
 
 @media screen and (min-width: 768px) {
-    .aboutme {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        &__art1 {
-            width: 200vw;
-            padding: 40px;
-            &--title {
-                font-size: 30px;
-            }
-            &--title2 {
-                font-size: 24px;
-            }
-            &--parr {
-                font-size: 20px;
-                max-width: 1000px;
-            }
-            &--btn {
-                font-size: 16px;
-            }
-        }
-        &__art2 {
-            width: 100vw;
-            &--img {
-                display: flex;
-                align-items: center;
-            }
-        }
+  .aboutme {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__art1 {
+      width: 200vw;
+      padding: 40px;
+      &--title {
+        font-size: 30px;
+      }
+      &--title2 {
+        font-size: 24px;
+      }
+      &--parr {
+        font-size: 20px;
+        max-width: 1000px;
+      }
+      &--btn {
+        font-size: 16px;
+      }
     }
+    &__art2 {
+      width: 100vw;
+      &--img {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
 }
 
 // Sección Portfolio
 .portfolio {
-    &__title {
-        color: $secondary-color;
-        font-family: $font-title;
-    }
+  &__title {
+    color: $secondary-color;
+    font-family: $font-title;
+  }
 }
 .galery {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .proyect1 {
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    &__img {
-        width: 150px;
-        height: 150px;
-        border: $letter-color 2px solid;
-        border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__img {
+    width: 150px;
+    height: 150px;
+    border: $letter-color 2px solid;
+    border-radius: 10%;
+  }
+  &__title {
+    color: $secondary-color;
+    font-family: $font-main;
+    margin-top: 5px;
+  }
+  &__parr {
+    color: $secondary-color;
+    font-family: $font-main;
+    margin-top: 5px;
+  }
+  &__icon {
+    margin-top: 5px;
+    &--git {
+      color: $letter-color;
     }
-    &__title {
-        color: $secondary-color;
-        font-family: $font-main;
-        margin-top: 5px;
+    &--web {
+      color: $letter-color;
     }
-    &__parr {
-        color: $secondary-color;
-        font-family: $font-main;
-        margin-top: 5px;
-    }
-    &__icon {
-        margin-top: 5px;
-        &--git {
-            color:$letter-color;
-        }
-        &--web {
-            color:$letter-color;
-        }
-
-    }
+  }
 }
 .proyect2 {
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    margin-top: 20px;
-    &__img {
-        width: 150px;
-        height: 150px;
-        border: $letter-color 2px solid;
-        border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  &__img {
+    width: 150px;
+    height: 150px;
+    border: $letter-color 2px solid;
+    border-radius: 10%;
+  }
+  &__title {
+    color: $secondary-color;
+    font-family: $font-main;
+    margin-top: 5px;
+  }
+  &__parr {
+    color: $secondary-color;
+    font-family: $font-main;
+    margin-top: 5px;
+  }
+  &__icon {
+    margin-top: 5px;
+    &--git {
+      color: $letter-color;
     }
-    &__title {
-        color: $secondary-color;
-        font-family: $font-main;
-        margin-top: 5px;
+    &--web {
+      color: $letter-color;
     }
-    &__parr {
-        color: $secondary-color;
-        font-family: $font-main;
-        margin-top: 5px;
-    }
-    &__icon {
-        margin-top: 5px;
-        &--git {
-            color:$letter-color;
-        }
-        &--web {
-            color:$letter-color;
-        }
-
-    }
+  }
 }
 .proyect3 {
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    margin-top: 20px;
-    &__img {
-        width: 150px;
-        height: 150px;
-        border: $letter-color 2px solid;
-        border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  &__img {
+    width: 150px;
+    height: 150px;
+    border: $letter-color 2px solid;
+    border-radius: 10%;
+  }
+  &__title {
+    color: $secondary-color;
+    font-family: $font-main;
+    margin-top: 5px;
+  }
+  &__parr {
+    color: $secondary-color;
+    font-family: $font-main;
+    margin-top: 5px;
+  }
+  &__icon {
+    margin-top: 5px;
+    &--git {
+      color: $letter-color;
     }
-    &__title {
-        color: $secondary-color;
-        font-family: $font-main;
-        margin-top: 5px;
+    &--web {
+      color: $letter-color;
     }
-    &__parr {
-        color: $secondary-color;
-        font-family: $font-main;
-        margin-top: 5px;
-    }
-    &__icon {
-        margin-top: 5px;
-        &--git {
-            color:$letter-color;
-        }
-        &--web {
-            color:$letter-color;
-        }
-
-    }
+  }
 }
 .proyect4 {
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    margin-top: 20px;
-    &__img {
-        width: 150px;
-        height: 150px;
-        border: $letter-color 2px solid;
-        border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  &__img {
+    width: 150px;
+    height: 150px;
+    border: $letter-color 2px solid;
+    border-radius: 10%;
+  }
+  &__title {
+    color: $secondary-color;
+    font-family: $font-main;
+    margin-top: 5px;
+  }
+  &__parr {
+    color: $secondary-color;
+    font-family: $font-main;
+    margin-top: 5px;
+  }
+  &__icon {
+    margin-top: 5px;
+    &--git {
+      color: $letter-color;
     }
-    &__title {
-        color: $secondary-color;
-        font-family: $font-main;
-        margin-top: 5px;
+    &--web {
+      color: $letter-color;
     }
-    &__parr {
-        color: $secondary-color;
-        font-family: $font-main;
-        margin-top: 5px;
-    }
-    &__icon {
-        margin-top: 5px;
-        &--git {
-            color:$letter-color;
-        }
-        &--web {
-            color:$letter-color;
-        }
-
-    }
+  }
 }
 .proyect5 {
-    display: flex;
-    flex-direction:column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  &__img {
+    width: 150px;
+    height: 150px;
+    border: $letter-color 2px solid;
+    border-radius: 10%;
+  }
+  &__title {
+    color: $secondary-color;
+    font-family: $font-main;
+    margin-top: 5px;
+  }
+  &__parr {
+    color: $secondary-color;
+    font-family: $font-main;
+    margin-top: 5px;
+  }
+  &__icon {
+    margin-top: 5px;
+    &--git {
+      color: $letter-color;
+    }
+    &--web {
+      color: $letter-color;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .galery {
     margin-top: 20px;
-    &__img {
-        width: 150px;
-        height: 150px;
-        border: $letter-color 2px solid;
-        border-radius: 10%;
-    }
-    &__title {
-        color: $secondary-color;
-        font-family: $font-main;
-        margin-top: 5px;
-    }
-    &__parr {
-        color: $secondary-color;
-        font-family: $font-main;
-        margin-top: 5px;
-    }
-    &__icon {
-        margin-top: 5px;
-        &--git {
-            color:$letter-color;
-        }
-        &--web {
-            color:$letter-color;
-        }
-
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
 }
-@media screen and (min-width: 768px){
-    .galery {
-        margin-top: 20px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 30px;
 
-    }
-}
+

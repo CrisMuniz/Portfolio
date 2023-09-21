@@ -1,1 +1,70 @@
+.page {
+  background-image: $primary-color;
+}
+.contact {
+  background-color: #801357;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-family: $font-title;
+    font-size: 22px;
+    color: $letter-color;
+  }
+  &__title2 {
+    font-family: $font-main;
+    font-size: 20px;
+    color: $secondary-color;
+  }
+  &__icons {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    &--git {
+      text-decoration: none;
+      color: $secondary-color;
+      font-family: $font-main;
+      font-size: 18px;
+    }
+    &--lin {
+      text-decoration: none;
+      color: $secondary-color;
+      font-family: $font-main;
+      font-size: 18px;
+    }
+  }
+}
+.icon {
+  color: $letter-color;
+  margin-left: 4px;
+}
+.copy{
+  font-family: $font-main;
+  font-size: 16px;
+  color:$letter-color;
+  margin-top:10px ;
+  margin-bottom: 10px;
+}
 
+@media screen and (min-width: 768px) {
+  .contact {
+    &__title {
+      font-size: 26px;
+    }
+    &__title2 {
+      font-size: 24px;
+    }
+    &__icons {
+      font-size: 20px;
+      width: 30%;
+    }
+  }
+  .copy {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
