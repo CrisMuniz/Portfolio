@@ -22,18 +22,21 @@ contact.addEventListener('click',handlerClickContact);
 
 function handlerClickContact() {
   list.classList.toggle('open');
+  burger.classList.toggle('close');
 }
 
 portfolio.addEventListener('click', handlerClickPortfolio);
 
 function handlerClickPortfolio() {
   list.classList.toggle('open');
+  burger.classList.toggle('close');
 }
 
 aboutme.addEventListener('click', handlerClickAboutme);
 
 function handlerClickAboutme() {
   list.classList.toggle('open');
+  burger.classList.toggle('close');
 }
 
 
