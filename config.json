@@ -30,9 +30,14 @@
     "dist": "docs/assets/js/"
   },
   "images": {
-    "src": "src/images/**/*.{gif,jpg,jpeg,JPG,JPEG,png,svg}",
+    "src": "src/images/**/*.{gif,jpg,jpeg,JPG,JPEG,png,svg,pdf}",
     "dest": "public/assets/images/",
     "dist": "docs/assets/images/"
+  },
+  "downloads": {
+    "src": "src/downloads/**.pdf",
+    "dest": "public/downloads/",
+    "dist": "docs/downloads/"
   },
   "watch": {
     "html": "src/**/*.html"
