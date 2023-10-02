@@ -3,66 +3,198 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Monda&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+   
+      <div class="container">
+        <header class="header">
+          <section class="header-section1">
+            <div class="header-section1__logo" ><a class="cm" href="https://www.linkedin.com/in/cristina-muniz-marin/">CM</a> </div>
+          </section>
+          <section class="header-section2">
+            <ul class="header-section2__ul  js_links">
+              <li class="js_aboutme"><a href="#aboutme" >Sobre Mí</a></li>
+              <li class="js_portfolio"><a href="#portfolio" >Portfolio</a></li>
+              <li class="js_contact"><a href="#contact" >Contacto</a></li>
+            </ul>
+             <div class="header-section2__icon js_burger">
+              <!-- <i class="fa-solid fa-bars"></i> -->
+              <span class="header-section2__icon--span"></span>
+              <span class="header-section2__icon--span"></span>
+              <span class="header-section2__icon--span"></span>
+            </div>
+          </section>
+        </header>
+      </div>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      <div class="page">
+        <main class="main-container">
+          <!-- seccción Sobre Mi -->
+          <section class="aboutme" id="aboutme">
+            <article class="aboutme__art1">
+              <h1 class="aboutme__art1--title">Cristina Muñiz</h1>
+              <h2 class="aboutme__art1--title2">Front End Developer Junior</h2>
+              <p class="aboutme__art1--parr">
+                ¡Hola Mundo! Soy Cris, me he graduado recientemente en Desarrollo Web.Si bien esta no ha sido siempre mi profesión un buen dia decidí dejarlo todo, reinventarme y saltar al mundo Tech.
+                Los comienzos nunca son fáciles y como diría mi padre "En  esta vida hay que estar frente al cañón y sino dentro del tubo" y con esa idea en mente aquí expongo este sencillo portfolio y os animo a que exploreís algunos de mis trabajos ya que estoy segura de que sólo serán los primeros de muchos.
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+              </p>
+              <button class="aboutme__art1--btn" >Descargar CV</button>
+              <a href="../../downloads/CV_portfolio.pdf"download> holis</a>
+            </article>
+            <article class="aboutme__art2">
+              <img
+                class="aboutme__art2--img"
+                src="./assets/images/foto_cris.jpg"
+                alt="cris"
+              />
+            </article>
+          </section>
+          <!-- sección Portfolio -->
+          <section class="portfolio" id="portfolio">
+            <h2 class="portfolio__title">Portfolio</h2>
+            <ul class="galery">
+              <li class="proyect1">
+                <img
+                  class="proyect1__img"
+                  src="./assets/images/anonimusproxy.png"
+                  alt=""
+                />
+                <h3 class="proyect1__title">Anonimus Proxy</h3>
+                <p class="proyect1__parr">HTML || CSS || SASS</p>
+                <div class="proyect1__icon">
+                  <a
+                    class="proyect1__icon--git"
+                    href="https://github.com/CrisMuniz/modulo-1-evaluacion-final-CrisMuniz"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a
+                    class="proyect1__icon--web"
+                    href="http://beta.adalab.es/modulo-1-evaluacion-final-CrisMuniz/"
+                    ><i class="fa-solid fa-globe"></i
+                  ></a>
+                </div>
+              </li>
+              <li class="proyect2">
+                <img
+                  class="proyect2__img"
+                  src="./assets/images/personajesdisney.jpg"
+                  alt=""
+                />
+                <h3 class="proyect2__title">Personajes Disney</h3>
+                <p class="proyect2__parr">HTML || CSS || SASS || JS</p>
+                <div class="proyect2__icon">
+                  <a
+                    class="proyect2__icon--git"
+                    href="https://github.com/CrisMuniz/modulo-2-evaluacion-final-CrisMuniz"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a
+                    class="proyect2__icon--web"
+                    href="http://beta.adalab.es/modulo-2-evaluacion-final-CrisMuniz/"
+                    ><i class="fa-solid fa-globe"></i
+                  ></a>
+                </div>
+              </li>
+              <li class="proyect3">
+                <img
+                  class="proyect3__img"
+                  src="./assets/images/rickandmorty.jpg"
+                  alt=""
+                />
+                <h3 class="proyect3__title">Rick and Morty</h3>
+                <p class="proyect3__parr">HTML || CSS || SASS || JS || REACT</p>
+                <div class="proyect3__icon">
+                  <a
+                    class="proyect3__icon--git"
+                    href="https://github.com/CrisMuniz/modulo-3-evaluacion-final-CrisMuniz"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a
+                    class="proyect3__icon--web"
+                    href="http://beta.adalab.es/modulo-3-evaluacion-final-CrisMuniz/"
+                    ><i class="fa-solid fa-globe"></i
+                  ></a>
+                </div>
+              </li>
+              <li class="proyect4">
+                <img
+                  class="proyect4__img"
+                  src="./assets/images/villanasdelcodigo.jpg"
+                  alt=""
+                />
+                <h3 class="proyect4__title">Villanas del Código</h3>
+                <p class="proyect4__parr">HTML || CSS || SASS</p>
+                <div class="proyect4__icon">
+                  <a
+                    class="proyect4__icon--git"
+                    href="https://github.com/CrisMuniz/project-promo-t-module-1-team-2"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a
+                    class="proyect4__icon--web"
+                    href="http://beta.adalab.es/project-promo-t-module-1-team-2/"
+                    ><i class="fa-solid fa-globe"></i
+                  ></a>
+                </div>
+              </li>
+              <li class="proyect5">
+                <img
+                  class="proyect5__img"
+                  src="./assets/images/bobesponja.jpg"
+                  alt=""
+                />
+                <h3 class="proyect5__title">Familia Bob</h3>
+                <p class="proyect5__parr">HTML || CSS || SASS || JS</p>
+                <div class="proyect5__icon">
+                  <a
+                    class="proyect5__icon--git"
+                    href="https://github.com/CrisMuniz/project-promo-t-module-2-team-1"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a
+                    class="proyect5__icon--web"
+                    href="http://beta.adalab.es/project-promo-t-module-2-team-1/"
+                    ><i class="fa-solid fa-globe"></i
+                  ></a>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <!-- seccion contacto -->
+          <section class="contact" id="contact">
+            <div class="contact__title">
+            <h2 class="contact__title--d1" >Contacto</h2>
+          </div>
+          <div class="contact__title2">
+            <h3 class="contact__title2--d2">cristinamuniz85@gmail.com</h3>
+            <div class="contact__icons">
+                <a class="contact__icons--git" href="https://github.com/CrisMuniz">GitHub<i class="fa-brands fa-github icon"></i
+                    ></a>
+                <a class="contact__icons--lin" href="https://www.linkedin.com/in/cristina-muniz-marin/">Linkedin<i class="fa-brands fa-linkedin icon"></i></a>
+            </div>
+          </div>
+          </section>
+        </main>
+      </div>
 
-          </li>
-        </ul>
-      </main>
-
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
+      <div class="footer-container">
+      <footer class="footer">
+          <div class="footer__copy">
+              &#169; 2023 Portfolio CM
+          </div>
       </footer>
+      </div>
 
-    </div>
+   
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

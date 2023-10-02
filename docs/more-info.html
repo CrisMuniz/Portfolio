@@ -11,10 +11,26 @@
 
   <body>
     <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Otra página del starter kit</h1>
-      </header>
+      <div class="container">
+        <header class="header">
+          <section class="header-section1">
+            <div class="header-section1__logo" ><a class="cm" href="https://www.linkedin.com/in/cristina-muniz-marin/">CM</a> </div>
+          </section>
+          <section class="header-section2">
+            <ul class="header-section2__ul  js_links">
+              <li class="js_aboutme"><a href="#aboutme" >Sobre Mí</a></li>
+              <li class="js_portfolio"><a href="#portfolio" >Portfolio</a></li>
+              <li class="js_contact"><a href="#contact" >Contacto</a></li>
+            </ul>
+             <div class="header-section2__icon js_burger">
+              <!-- <i class="fa-solid fa-bars"></i> -->
+              <span class="header-section2__icon--span"></span>
+              <span class="header-section2__icon--span"></span>
+              <span class="header-section2__icon--span"></span>
+            </div>
+          </section>
+        </header>
+      </div>
 
       <main>
         <p>
@@ -23,13 +39,13 @@
           que te ha traído hasta aquí.
         </p>
       </main>
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
+      <div class="footer-container">
+      <footer class="footer">
+          <div class="footer__copy">
+              &#169; 2023 Portfolio CM
+          </div>
       </footer>
+      </div>
 
     </div>
     <script src="./assets/js/main.js"></script>
